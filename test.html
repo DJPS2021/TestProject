@@ -1,0 +1,106 @@
+Skip to content
+Why GitHub? 
+Team
+Enterprise
+Explore 
+Marketplace
+Pricing 
+Search
+
+Sign in
+Sign up
+mdn
+/
+learning-area
+4k14.2k
+Code
+Issues
+10
+Pull requests
+14
+Actions
+Projects
+Security
+Insights
+learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game-start.html
+@dedeogluhu
+dedeogluhu Update number-guessing-game-start.html - newline
+…
+Latest commit ab26fe1 on Sep 6, 2020
+ History
+ 5 contributors
+@hadleyel@Knock7@dedeogluhu@chrisdavidmills@bripmccann
+50 lines (39 sloc)  1 KB
+  
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Number guessing game</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Number guessing game</h1>
+
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+
+    <div class="form">
+      <label for="guessField">Enter a guess: </label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+  
+  const guesses = document.querySelector('.guesses');
+  const lastResult = document.querySelector('.lastResult');
+  const lowOrHi = document.querySelector('.lowOrHi');
+  
+  const guessSubmit = document.querySelector('.guessSubmit');
+  const guessField = document.querySelector('.guessField');
+  
+  let guessCount = 1;
+  let resetButton;
+  
+    </script>
+  </body>
+ 
+</html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
